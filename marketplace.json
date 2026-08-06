@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-06T14:00:00Z",
+  "updatedAt": "2026-08-06T14:45:00Z",
   "plugins": [
     {
       "id": "gh_release_watch",
@@ -53,6 +53,19 @@
       "downloadUrl": "packages/webmaster_tools-1.0.1.zip",
       "sha256": "bf41e6a807a586040900f5a745e623971043cab5ff3eeccd6b62c36f473e4e0c",
       "entryDll": "站长工具.dll"
+    },
+    {
+      "id": "delta_force",
+      "name": "三角洲",
+      "version": "1.0.7",
+      "author": "十年",
+      "description": "三角洲行动每日密码门查询",
+      "homepage": "https://github.com/TenYearsPro/delta-force",
+      "minAppVersion": "0.1.15",
+      "abstractionsMajor": 1,
+      "downloadUrl": "packages/delta_force-1.0.7.zip",
+      "sha256": "4746b9c3cce9b527fd9470874d3d8e83720b5c6b236608b9ab0c00a40270584c",
+      "entryDll": "三角洲.dll"
     }
   ]
 }
