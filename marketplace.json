@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-06T09:12:10Z",
+  "updatedAt": "2026-08-06T14:00:00Z",
   "plugins": [
     {
       "id": "gh_release_watch",
@@ -40,6 +40,19 @@
       "downloadUrl": "packages/paybot-1.0.0.zip",
       "sha256": "4368921ad978b534d361cfc33e311386e53f21df3dec6357625af52f7ca5fe91",
       "entryDll": "PayBot.dll"
+    },
+    {
+      "id": "webmaster_tools",
+      "name": "站长工具",
+      "version": "1.0.1",
+      "author": "十年",
+      "description": "域名解析、Ping、备案、证书、网站信息等站长查询",
+      "homepage": "https://github.com/TenYearsPro/webmaster-tools",
+      "minAppVersion": "0.1.15",
+      "abstractionsMajor": 1,
+      "downloadUrl": "packages/webmaster_tools-1.0.1.zip",
+      "sha256": "bf41e6a807a586040900f5a745e623971043cab5ff3eeccd6b62c36f473e4e0c",
+      "entryDll": "站长工具.dll"
     }
   ]
 }
