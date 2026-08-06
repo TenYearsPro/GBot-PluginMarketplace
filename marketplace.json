@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-06T15:05:00Z",
+  "updatedAt": "2026-08-06T16:10:00Z",
   "plugins": [
     {
       "id": "gh_release_watch",
@@ -66,6 +66,19 @@
       "downloadUrl": "packages/delta_force-1.0.7.zip",
       "sha256": "4746b9c3cce9b527fd9470874d3d8e83720b5c6b236608b9ab0c00a40270584c",
       "entryDll": "三角洲.dll"
+    },
+    {
+      "id": "wangzhe",
+      "name": "王者",
+      "version": "1.0.3",
+      "author": "十年",
+      "description": "王者荣耀：英雄查询、出装铭文、四区战力、随机英雄",
+      "homepage": "https://github.com/TenYearsPro/wangzhe",
+      "minAppVersion": "0.1.15",
+      "abstractionsMajor": 1,
+      "downloadUrl": "packages/wangzhe-1.0.3.zip",
+      "sha256": "108c75b717446b519408b0a0587189e02957f5ea5a3842a1feddb9247bb6bc8d",
+      "entryDll": "王者.dll"
     }
   ]
 }
