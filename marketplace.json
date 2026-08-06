@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updatedAt": "2026-08-06T14:45:00Z",
+  "updatedAt": "2026-08-06T15:05:00Z",
   "plugins": [
     {
       "id": "gh_release_watch",
@@ -51,7 +51,7 @@
       "minAppVersion": "0.1.15",
       "abstractionsMajor": 1,
       "downloadUrl": "packages/webmaster_tools-1.0.1.zip",
-      "sha256": "bf41e6a807a586040900f5a745e623971043cab5ff3eeccd6b62c36f473e4e0c",
+      "sha256": "a31b0f4c748fc9d89c09182e2bc651604888f804b357df0157acddbb83461606",
       "entryDll": "站长工具.dll"
     },
     {
