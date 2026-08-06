@@ -1,19 +1,32 @@
 {
-  "schemaVersion": 1,
-  "updatedAt": "2026-08-06T05:31:58Z",
-  "plugins": [
-    {
-      "id": "gh_release_watch",
-      "name": "GitHub 版本监控",
-      "version": "1.1.2",
-      "author": "故里",
-      "description": "监控 GitHub 全部新版本，或指定版本 主动消息推指定群",
-      "homepage": "https://github.com/a1515333102/GBot",
-      "minAppVersion": "0.1.15",
-      "abstractionsMajor": 1,
-      "downloadUrl": "packages/gh_release_watch-1.1.2.zip",
-      "sha256": "ddc3c8de8ba90169fd60cbd6ae3aade36767e2b247bb027b827f505bb6b44c08",
-      "entryDll": "GBot.Plugins.GhReleaseWatch.dll"
-    }
-  ]
+    "schemaVersion":  1,
+    "updatedAt":  "2026-08-06T08:51:36Z",
+    "plugins":  [
+                    {
+                        "id":  "gh_release_watch",
+                        "name":  "GitHub 版本监控",
+                        "version":  "1.1.2",
+                        "author":  "故里",
+                        "description":  "监控 GitHub 全部新版本，或指定版本 主动消息推指定群",
+                        "homepage":  "https://github.com/a1515333102/GBot",
+                        "minAppVersion":  "0.1.15",
+                        "abstractionsMajor":  1,
+                        "downloadUrl":  "packages/gh_release_watch-1.1.2.zip",
+                        "sha256":  "ddc3c8de8ba90169fd60cbd6ae3aade36767e2b247bb027b827f505bb6b44c08",
+                        "entryDll":  "GBot.Plugins.GhReleaseWatch.dll"
+                    },
+                    {
+                        "id":  "backend",
+                        "name":  "代发",
+                        "version":  "1.0.9",
+                        "author":  "故里",
+                        "description":  "HTTP 代发消息、入退群提示、Markdown/媒体等后端能力",
+                        "homepage":  "https://github.com/a1515333102/GBot",
+                        "minAppVersion":  "0.1.17",
+                        "abstractionsMajor":  1,
+                        "downloadUrl":  "packages/backend-1.0.9.zip",
+                        "sha256":  "9dc629b9e48824a4211820bf9ddf602867f48cd05d57169c1a92905001446585",
+                        "entryDll":  "GBot.Plugins.Backend.dll"
+                    }
+                ]
 }
