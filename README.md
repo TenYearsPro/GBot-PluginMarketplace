@@ -1,48 +1,40 @@
 ﻿# GBot 插件市场
 
-GBot 官方插件目录仓库。客户端默认从此仓库拉取清单并下载插件包。
+公开的插件目录与包分发仓库。GBot 客户端默认从此拉取清单并安装插件。
 
-仓库地址：https://github.com/a1515333102/GBot-PluginMarketplace
+- 市场仓：https://github.com/a1515333102/GBot-PluginMarketplace  
+- 插件契约（公开）：https://github.com/a1515333102/GBot.PluginAbstractions  
+
+> GBot 主程序可为私有；上架**不需要**主仓库权限。
+
+## 用户怎么装
+
+打开 GBot → **插件** → **市场** → **刷新清单** → **安装** → 在「已安装」打开开关。
+
+清单地址：
+
+`https://raw.githubusercontent.com/a1515333102/GBot-PluginMarketplace/master/marketplace.json`
+
+## 作者怎么发布（提 PR）
+
+详细步骤见 **[CONTRIBUTING.md](./CONTRIBUTING.md)**。
+
+一句话：
+
+1. 引用公开的 `GBot.PluginAbstractions` 写插件  
+2. 打 zip（勿含 Abstractions / Avalonia）  
+3. Fork 本仓 → 放进 `packages/` + 改 `marketplace.json` → 提 PR  
+4. 合并后即可被用户安装  
 
 ## 目录
 
 | 路径 | 说明 |
 |------|------|
 | `marketplace.json` | 市场清单 |
-| `packages/*.zip` | 插件包（扁平 DLL） |
+| `packages/*.zip` | 插件包 |
+| `tools/make-package.ps1` | 从 DLL 目录打 zip 并更新清单 |
+| `CONTRIBUTING.md` | 上架规范 |
 
-## 默认清单 URL
+## 安全
 
-`https://raw.githubusercontent.com/a1515333102/GBot-PluginMarketplace/master/marketplace.json`
-
-## 给别人用（上架）
-
-1. 在 [GBot](https://github.com/a1515333102/GBot) 主仓库打插件包：
-
-```powershell
-.\scripts\pack-plugin.ps1 `
-  -Project "插件.csproj" `
-  -Id "my_plugin" `
-  -Name "名字" `
-  -Version "1.0.0" `
-  -Author "你" `
-  -Description "说明" `
-  -EntryDll "插件.dll" `
-  -MarketRoot "D:\GBot-PluginMarketplace"
-```
-
-（若本仓与 GBot 同级，也可省略 `-MarketRoot`，脚本会自动找到。）
-
-2. 进入本仓库，提交并推送 `marketplace.json` 与 `packages/*.zip`
-3. 用户打开 GBot → **插件** → **市场** → **刷新清单** → **安装**
-
-## 包规范
-
-- zip 内为入口 DLL + 私有依赖（扁平，无子目录）
-- **禁止**包含 `GBot.PluginAbstractions.dll` / Avalonia / 宿主程序集
-- 清单必须带 `sha256`；`id` 用稳定英文
-- 详见 GBot 主仓 `docs/开发文档.md` 第 9 节
-
-## 安全提示
-
-插件与宿主同进程运行，请只上架可信来源的插件。
+插件与宿主同进程，无沙箱。请只安装 / 只合并可信来源。
