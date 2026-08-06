@@ -2,6 +2,8 @@
 
 GBot 官方插件目录仓库。客户端默认从此仓库拉取清单并下载插件包。
 
+仓库地址：https://github.com/a1515333102/GBot-PluginMarketplace
+
 ## 目录
 
 | 路径 | 说明 |
@@ -15,12 +17,24 @@ GBot 官方插件目录仓库。客户端默认从此仓库拉取清单并下载
 
 ## 给别人用（上架）
 
-1. 在 GBot 主仓库打插件包：
-   `powershell
-   .\scripts\pack-plugin.ps1 -Project "插件.csproj" -Id "my_plugin" -Name "名字" -Version "1.0.0" -Author "你" -Description "说明" -EntryDll "插件.dll" -MarketRoot "D:\GBot-PluginMarketplace"
-   `
+1. 在 [GBot](https://github.com/a1515333102/GBot) 主仓库打插件包：
+
+```powershell
+.\scripts\pack-plugin.ps1 `
+  -Project "插件.csproj" `
+  -Id "my_plugin" `
+  -Name "名字" `
+  -Version "1.0.0" `
+  -Author "你" `
+  -Description "说明" `
+  -EntryDll "插件.dll" `
+  -MarketRoot "D:\GBot-PluginMarketplace"
+```
+
+（若本仓与 GBot 同级，也可省略 `-MarketRoot`，脚本会自动找到。）
+
 2. 进入本仓库，提交并推送 `marketplace.json` 与 `packages/*.zip`
-3. 用户打开 GBot → 插件 → 市场 → 刷新清单 → 安装
+3. 用户打开 GBot → **插件** → **市场** → **刷新清单** → **安装**
 
 ## 包规范
 
